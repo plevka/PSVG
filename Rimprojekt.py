@@ -15,3 +15,14 @@ def int_to_rim(x):
                      "C//","C//D//", "D//","C//M//","M//"] #100.000.000-1.000.000.000
                     #lomitko znamena cara nad rimskou cislici
     i = 36 #pocet pozic
+    rimske_cisla = ''
+    while x != 0:
+        if cisla[i] <= x:
+            rimske_cisla += rimskecislice[i]
+            x = x - cisla[i]
+        else:
+            i -= 1
+    return rimske_cisla
+
+
+print("Prevod do rimskeho cisla: " + int_to_rim(1100))
