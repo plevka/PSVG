@@ -26,4 +26,10 @@ def int_to_rim(x):
     return rimske_cisla
 
 
-print("Prevod do rimskeho cisla: " + int_to_rim())
+x = 2
+if x == 0:
+    raise Exception("číslo se nesmí rovnat nule")
+elif x < 0:
+    raise Exception("číslo nesmí být nižší než nula!")
+else:
+    print("Převod do římského čísla: " + int_to_rim(x))
