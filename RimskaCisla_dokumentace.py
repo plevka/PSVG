@@ -1,4 +1,3 @@
-#dokumentace
 '''
 Program, který je určený pro převod z normálních čísel na římské. Rozsah je 1 - 1 000 000 000
 '''
