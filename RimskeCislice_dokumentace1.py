@@ -1,4 +1,3 @@
-#dokumentace
 '''
 Program, který je určený pro převod z normálních čísel na římské. Rozsah je 1 - 1 000 000 000
 '''
@@ -36,15 +35,22 @@ def int_to_rim(x):
             i -= 1
     return rimske_cisla
 '''
-
 Po zadání čísla x začne systém hledat nejvyšší ekvivalent v římské verzi, který je menší, nebo rovno x.
 Systém tak projíždí všechny možnosti, dokud nezbývá 0 a vyhodí výsledek konverze.
 Například u čísla 1500 začne hledat římský protějšek, který je nižší, nebo rovno 1000. 
 V našem případě přiřadí M. Dále zopakuje ten stejný proces u čísla 500 a přiřadí D. Pak už zbývá 0 a systém
 vypíše konverzi.
+'''
+x = 2
+if x == 0:
+    raise Exception("číslo se nesmí rovnat nule")
+elif x < 0:
+    raise Exception("číslo nesmí být nižší než nula!")
+else:
 
 '''
-
+Podmínky, které zajišťují, aby nebylo možné zadat nulu, nebo záporné číslo
+'''
 print("Prevod do rimskeho cisla: " + int_to_rim(1500))
 
 '''
