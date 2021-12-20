@@ -26,14 +26,14 @@ def int_to_rim(x):
                     #lomitko znamena cara nad rimskou cislici
 
     i = 36 #pocet pozic
-    rimske_cisla = ''
+    rimske_cislice = ''
     while x != 0:
         if cisla[i] <= x:
-            rimske_cisla += rimskecislice[i]
+            rimske_cislice += rimskecislice[i]
             x = x - cisla[i]
         else:
             i -= 1
-    return rimske_cisla
+    return rimske_cislice
 '''
 Po zadání čísla x začne systém hledat nejvyšší ekvivalent v římské verzi, který je menší, nebo rovno x.
 Systém tak projíždí všechny možnosti, dokud nezbývá 0 a vyhodí výsledek konverze.
